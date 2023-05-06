@@ -5,6 +5,12 @@ import Gem.Gem;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+Vi opretter en GemMine-klasse, der implementerer Multiton-mønsteret.
+GemMine gemmer et kort over forskellige typer ædelstene.
+Nøglen på kortet vil være navnet på ædelstenen, og værdien vil være en forekomst af ædelstenen.
+
+*/
 public class GemMine
 {
   private static Map<String, Gem> allInstances = new HashMap<>();
