@@ -1,13 +1,23 @@
+package kingdom;
+
 import gem.Gem;
-import kingdom.Catalogue;
 
 import java.util.Random;
 
 public class GemTransporter implements Runnable {
   private final GemDeposit gemDeposit;
 
-  public GemTransporter(GemDeposit gemDeposit) {
+  private Random random = new Random();
+  private ArrayList<Gem> gems;
+  private String name;
+  private TreasureRoomDoor treasureRoomDoor;
+
+  public GemTransporter(String name , GemDeposit<Gem> gemDeposit, TreasureRoomDoor treasureRoomDoor)
+  {
     this.gemDeposit = gemDeposit;
+    gems = new ArrayList<>();
+    this.name = name;
+    this.treasureRoomDoor = treasureRoomDoor;
   }
 
   @Override

@@ -1,5 +1,6 @@
+package kingdom;
+
 import gem.GemMine;
-import gem.Ruby;
 
 public class GemMineWorker implements Runnable
 {

@@ -1,5 +1,7 @@
+package kingdom;
+
 /**
- * ArrayList is an implementation of interface ListADT (the interface to a list
+ * kingdom.ArrayList is an implementation of interface kingdom.ListADT (the interface to a list
  * collection - the abstract data type List). Elements are referenced by
  * contiguous numeric indices. The list allow duplicate elements and
  * <code>null</code> elements.

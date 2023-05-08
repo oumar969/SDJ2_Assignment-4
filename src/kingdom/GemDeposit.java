@@ -1,7 +1,8 @@
+package kingdom;
 
 /*
-Vi  opretter en blokeringskø kaldet Gem Deposit ved hjælp af ArrayList, der er angivet i opgaven.
-Vi vil bruge adaptermønsteret til at konvertere ArrayList til en blokerende kø.
+Vi  opretter en blokeringskø kaldet Gem Deposit ved hjælp af kingdom.ArrayList, der er angivet i opgaven.
+Vi vil bruge adaptermønsteret til at konvertere kingdom.ArrayList til en blokerende kø.
 
  */
 public class GemDeposit<Gem> implements BlockingQueueKingdom<Gem>
