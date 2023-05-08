@@ -1,6 +1,6 @@
-package Gem;
+package gem;
 
-import Gem.Gem;
+import kingdom.Catalogue;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -56,6 +56,7 @@ public class GemMine
         }
       }
     }
+
     return instance;
   }
 }

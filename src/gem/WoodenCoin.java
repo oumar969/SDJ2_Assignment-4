@@ -1,6 +1,4 @@
-package Gem;
-
-import Gem.Gem;
+package gem;
 
 public class WoodenCoin implements Gem
 {

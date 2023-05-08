@@ -1,4 +1,4 @@
-package Gem;
+package gem;
 
 public interface Gem {
 

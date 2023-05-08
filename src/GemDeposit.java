@@ -53,6 +53,11 @@ public class GemDeposit<Gem> implements BlockingQueueKingdom<Gem>
 
   @Override public boolean isFull()
   {
-    return capacity== gemList.size();
+    return capacity <= gemList.size();
+  }
+
+  public int size()
+  {
+    return gemList.size();
   }
 }

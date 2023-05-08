@@ -1,6 +1,6 @@
 package kingdom;
 
-import Gem.Gem;
+import gem.Gem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,19 +15,19 @@ public class TreasureRoom implements TreasureRoomDoor {
     // access methods
 
     public synchronized void acquireReadAccess(String actorName) {
-        // note in the catalogue a person entered
+        Catalogue.getInstance().enteredTreasureRoom();
     }
 
     public synchronized void acquireWriteAccess(String actorName) {
-        // note in the catalogue a person entered
+        Catalogue.getInstance().enteredTreasureRoom();
     }
 
     public synchronized void releaseReadAccess(String actorName) {
-        // note in the catalogue a person left
+        Catalogue.getInstance().leftTreasureRoom();
     }
 
     public synchronized void releaseWriteAccess(String actorName) {
-        // note in the catalogue a person left
+        Catalogue.getInstance().leftTreasureRoom();
     }
 
     // interact methods

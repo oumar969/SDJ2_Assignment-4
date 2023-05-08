@@ -1,6 +1,6 @@
 package kingdom;
 
-import Gem.Gem;
+import gem.Gem;
 
 import java.util.List;
 
